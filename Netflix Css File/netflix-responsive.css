@@ -1,0 +1,39 @@
+@media screen and (max-width:770px){
+    
+    .information> :nth-child(2){
+        font-size: 2rem;
+    }
+    
+    .information> :nth-child(3){
+        font-size: 1.5rem;
+    }
+    
+    .information input{
+        font-size: 1.1rem;
+    }
+    
+    .btn-red-gs{
+        font-size: 1.1rem;
+    }
+    
+    .first{
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 50%;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 2.2rem;
+    }
+    
+    p{
+        font-size: 1.5rem;
+    }
+    
+    .footer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}

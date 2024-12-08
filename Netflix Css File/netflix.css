@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    background-image: url("../Netflix Image File/bg.jpg");
+    height: 90vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+   /* background-size: max(120rem, 100vw); */
+    background-size: cover;
+    position: relative;    
+}
+
+.box{
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    opacity: .45;
+    position: absolute;
+    top: 0;
+    /* border: 2px solid purple; */
+}
+
+.nav{
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    margin: auto;
+    /* border: 2px solid white; */
+}
+
+.nav img{
+    width: 8.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.information{
+    color: white;
+    height: calc(100% - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0rem 3rem;
+    font-family: "Martel Sans", sans-seri;
+    gap: .7rem;
+}
+
+/* .information> :nth-child(1){
+    font-size: 2.7rem;
+    font-weight: bolder;
+    text-align: center;
+} */
+
+.information> :nth-child(2){
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.information> :nth-child(3){
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.line{
+    height: .6rem;
+    background-color: rgb(46, 44, 44, 0.7);
+}
+
+.btn{    
+    all: unset;
+    margin: .2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-red-sn{
+    background-color: #ff2b35;
+    padding: .2rem .7rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+}
+
+.btn-red-gs{
+    background-color: #ff2b35;
+    padding: .5rem 1.2rem;
+    font-size: 1.5rem;
+    border-radius: .4rem;
+}
+
+.btn-red-sn:hover, .btn-red-gs:hover{
+    background-color: #ff000a;
+}
+
+.btn-transparent{
+    background-color: transparent;
+    padding: .4rem 1.2rem;
+    /* background-color: transparent; */
+    border: 1px solid white;
+    border-radius: .5rem;   
+}
+
+.information input{    
+    all: unset;
+    background-color: rgb(28, 28, 28, 0.6);
+    padding: .4rem 1.2rem;
+    font-size: 1.5rem;
+    border-radius: .4rem;
+    border: 1px solid white;
+}
+
+.first{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    /* padding: 5rem; */
+    /* border: 2px solid red; */
+}
+
+.text{
+    color: white;
+    margin: 1rem;
+    /* border: 2px solid white; */
+}
+
+.section-img img{
+    width: 27rem;
+    position: relative;
+    z-index: 10;
+    /* border: 2px solid blue; */
+}
+
+.section-img{
+    position: relative;
+}
+
+.section-img video{
+    position: absolute;
+    left: 0;
+    width: 27rem;
+}
+
+/* .text :nth-child(1){
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+ */
+/* .text :nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 400;
+} */
+
+.faq{
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Martel Sans", sans-seri;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.faq-box{
+    background-color: rgb(45, 43, 43);
+    font-size: 1.7rem;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .4rem;
+    transition: all .3s ease-in-out;
+    /* cursor: pointer; */
+}
+
+.faq-box:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+footer{
+    color: white;
+    margin: 3rem 0rem;
+}
+
+footer p{
+    margin: .5rem 10.5vw;
+    font-size: 1.3rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;    
+    /* border: 2px solid white; */
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;    
+}
+
+.footer-items a{
+    /* text-decoration: none; */
+    color: white;
+    padding: .7rem;
+    font-size: 1.3rem;
+    /* cursor: pointer; */
+}
+
+.footer-items a:hover{
+    color: purple;
+}
+
+.respo{
+    
+}
+
+h1{
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
